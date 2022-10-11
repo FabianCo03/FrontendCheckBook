@@ -1,0 +1,113 @@
+body{
+    background-image: url(fondo.png);
+    background-size: cover;   
+}
+
+h1{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form_registro::placeholder{
+    color: grey;
+    font-size: 15px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.fecha_nacimiento {
+    display: none;
+}
+
+.form_registro{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: 85px;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form_registro h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ECF0F1;
+}
+
+.content-clients{
+    width: 50%;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.content-row-client {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #dbdbdb;
+    margin-top: 4px;
+    cursor: pointer;
+    padding: 2px;
+  }
+  .content-row-client:hover {
+    background: #989898;
+}
+
+.controls{
+    width: 100%; 
+    color: #fff;
+    background: #0000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.form_registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 400px;
+}
+
+.form_registro .botones{
+    width: 100%;
+    margin: 1px;
+    background-color: transparent;
+    font-weight: semibold;
+    color: #eee;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #117864;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.form_registro .botones:hover{
+    box-shadow: .5rem .5rem 1rem #117864;
+    box-shadow: -.5rem -.5rem 100rem #117864;
+}
+
+.form_registro .botones:active{
+    box-shadow: inset .2rem .2rem 1rem #1E8449;
+}
+
+
+
+

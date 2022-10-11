@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <link rel="stylesheet" href="menu_naveg.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style_mesas.css">
+    <title>CheckBook</title>
+
+</head>
+
+<body>
+    <ul class="form_naveg">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Regístrate</a></li>
+        <li><a href="#">Reservas</a></li>
+        <li><a href="#">Soporte técnico</a></li>
+    </ul>
+
+<section class="form_registro">
+        <h2>Regístrate</h2>
+    <form id="formulario_clientes">
+        <input class="controls" type="text" name="nombre"  placeholder="*Nombre Completo" id="nombre" autocomplete = "off";>
+        <input class="controls" type="text" name="cedula"  placeholder="*Cédula" id="cedula" autocomplete = "off";>
+        <input class="controls" type="date" name="fecha_nacimiento" value="Fecha cumpleaños" id="fecha_nacimiento">
+        <input class="controls" type="tel" name="telefono" placeholder="*Teléfono" id="celular" autocomplete = "off";>
+        <input class="controls" type="email" name="correo" placeholder="*Correo" id="correo" autocomplete = "off";>
+        <input class="botones" type="submit" value="Enviar registro">
+    </form>
+</section>
+
+<section class="form_mesas"></section>
+    <h2>Mesas</h2>
+    <form id="mesas"></form>
+        <form id="mesas"></form>    
+        <input class="controls_for_mesas" type="number" name="num_mesa" value="Número de mesa" placeholder="#">
+    <div class="content-clients" id="listado_clientes">
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="post_client.js"></script>
+    <script src="delete_client.js"></script>
+    <script src="update_client.js"></script>
+</body>
+
+</html>
