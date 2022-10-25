@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="/proyecto_app/styles/menu_naveg.css" />
+    <link rel="stylesheet" href="/proyecto_app/styles/style.css" />
+    <link rel="stylesheet" href="/proyecto_app/styles/mapa.css" />
+    <title>CheckBook</title>
+  </head>
+
+  <body>
+    <ul class="form_naveg">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../views/registro.html">Regístrate</a></li>
+      <li><a href="../views/reservar_mesa.html">Reservar</a></li>
+      <li><a href="../views/gestion_mesas.html">Gestiona mesas</a></li>
+      <li><a href="../views/search_mapa.html">Buscar reserva</a></li>
+    </ul>
+
+    <section class="form_registro">
+      <h2>Regístrate</h2>
+      <div class="content">
+        <div class="form">
+          <form id="formulario_clientes">
+            <input
+              class="controls"
+              type="text"
+              name="nombre"
+              placeholder="*Nombre Completo"
+              id="nombre"
+              autocomplete="off"
+            />
+            <input
+              class="controls"
+              type="text"
+              name="cedula"
+              placeholder="*Cédula"
+              id="cedula"
+              autocomplete="off"
+            />
+            <input
+              class="controls"
+              type="date"
+              name="fecha_nacimiento"
+              value="Fecha cumpleaños"
+              id="fecha_nacimiento"
+            />
+            <input
+              class="controls"
+              type="tel"
+              name="telefono"
+              placeholder="*Teléfono/Celular"
+              id="celular"
+              autocomplete="off"
+            />
+            <input
+              class="controls"
+              type="email"
+              name="correo"
+              placeholder="*Correo"
+              id="correo"
+              autocomplete="off"
+            />
+            <input class="botones" type="submit" value="Enviar Registro" />
+          </form>
+        </div>
+
+        <div class="list">
+          <div id="listado_clientes"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../controllers/clients/get.js"></script>
+    <script src="../controllers/mesas/get.js"></script>
+    <script src="../controllers/reservas/get.js"></script>
+
+    <script src="../index.js"></script>
+
+    <script src="../controllers/clients/post.js"></script>
+    <script src="../controllers/clients/update.js"></script>
+    <script src="../controllers/clients/delete.js"></script>
+    <script src="../controllers/clients/index.js"></script>
+
+    <!--<script src="controllers/mesas/post.js"></script>
+    <script src="controllers/mesas/update.js"></script>
+    <script src="controllers/mesas/delete.js"></script>
+
+    <script src="controllers/reservas/post.js"></script>
+    <script src="controllers/reservas/update.js"></script>
+    <script src="controllers/reservas/delete.js"></script>
+    <script src="controllers/reservas/search.js"></script>-->
+  </body>
+</html>

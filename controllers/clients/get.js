@@ -7,9 +7,14 @@ function get_clients() {
         .then(res => res.json())
         .then(data => {
 
-            build_list(data);
+            build_list_clients(data);
+            agregar_opciones_clientes(data);
 
         }).catch((error) => {
-            alert(`Error Catch GET: ${error.statusText}`);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error API get clients',
+                text: `Error Response: ${error.statusText}`
+            })
         });
 }

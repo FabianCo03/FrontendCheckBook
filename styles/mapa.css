@@ -1,0 +1,40 @@
+.grid-container{
+    padding: 15px;
+    background-color: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.grid-container > div{
+    /*background-color: #117864;*/
+    border: 5px solid black;
+    color:#eee;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.mesa-ocupada{
+    background-color:#C0392B;
+}
+
+.mesa-libre{
+    background-color: #138D75;
+}
+
+.content-info-mesa{
+    margin-top: 8px;
+    font-size: 22px;
+    color:#fff;
+    flex-direction: column;
+    background-color: none;
+    text-align: center;
+}
+
+.image-tables{
+    width: 210px;
+}

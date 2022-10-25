@@ -10,6 +10,7 @@ body{
     width: 90%;
     max-width: 1000px;
     margin: auto;
+    border-radius: 8px;
 }
 
 .form_naveg li a{
@@ -28,16 +29,18 @@ body{
 
 .form_naveg li a:hover{
     background-color: #117864;
+    border-radius: 8px;
 }
 
 .form_naveg li a::before{
+    border-radius: 180px;
     content: "";
-    height: 4px;
+    height: 2.5px;
     width: 0%;
     background: #eee;
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: 0.5px;
     transition: 0.4s ease-out;
 }
 

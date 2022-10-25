@@ -7,7 +7,11 @@ function update_client() {
         .then(res => res.json())
         .then(data => {
         }).catch((error) => {
-            alert(`Error Catch UPDATE: ${error.statusText}`);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error API Update client',
+                text: `Error Response: ${error.statusText}`
+            })
         });
 }
 // async await; pausa la ejecución de la función asíncrona y espera la resolución de la Promise pasada y, a continuación, reanuda la ejecución de la función async y devuelve el valor resuelto
